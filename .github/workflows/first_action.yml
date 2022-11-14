@@ -19,5 +19,10 @@ jobs:
       - name: print ruby version
         run: |
           ruby -v 
-          rvm list
+        
+      - name: install gazer
+        run: gem install gazer
+        
+      - name: test gazer installation
+        run: gzr help
   
