@@ -21,7 +21,7 @@ jobs:
           ruby -v 
         
       - name: install gazer
-        run: gem install gazer
+        run: sudo gem install gazer
         
       - name: test gazer installation
         run: gzr help
