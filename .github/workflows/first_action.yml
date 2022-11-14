@@ -1,0 +1,23 @@
+# Name of the workflow
+name: First Workflow
+
+# Trigger event(s) 
+on: 
+  workflow_dispatch
+
+# Define Jobs that are part of the worfow
+jobs:
+  
+  # Name of the first job
+  first-job:
+    # Define runner environment
+    runs-on: ubuntu-latest
+    
+    # Steps to be executed within the first job
+    steps:
+      # First Step
+      - name: print ruby version
+        run: |
+          ruby -v 
+          rvm list
+  
